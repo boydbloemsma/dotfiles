@@ -7,6 +7,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    use("TimUntersberger/neogit")
+
+    -- Plenary is needed for telescope
     use("nvim-lua/plenary.nvim")
     use("nvim-lua/popup.nvim")
     use {
@@ -20,6 +23,7 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
+    -- Lsp magic
     use('neovim/nvim-lspconfig')
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
@@ -30,13 +34,15 @@ return require('packer').startup(function(use)
 
     use("simrat39/symbols-outline.nvim")
 
-
-    use("ThePrimeagen/git-worktree.nvim")
-
     use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
     })
 
     use("nvim-treesitter/playground")
     use("romgrk/nvim-treesitter-context")
+
+    -- Debugging
+    use("mfussenegger/nvim-dap")
+    use("rcarriga/nvim-dap-ui")
+    use("theHamsta/nvim-dap-virtual-text")
 end)

@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/boydbloemsma/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["git-worktree.nvim"] = {
-    loaded = true,
-    path = "/Users/boydbloemsma/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
-    url = "https://github.com/ThePrimeagen/git-worktree.nvim"
-  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/boydbloemsma/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

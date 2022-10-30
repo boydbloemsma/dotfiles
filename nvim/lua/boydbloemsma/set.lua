@@ -13,8 +13,10 @@ vim.opt.incsearch = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
 
+vim.opt.scrolloff = 8
+
 vim.g.mapleader = " "
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
